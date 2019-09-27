@@ -7,6 +7,7 @@
     --submit-width: 100px;
 }
 
+/*The visible green box with black border*/
 .box
 {
     border-radius: 50px;
@@ -22,6 +23,7 @@
     margin: calc(var(--box-height) / -2) 0px 0px calc(var(--box-width) / -2);
 }
 
+/*aligns the items within the box*/
 .box .wrapper
 {
   display: grid;

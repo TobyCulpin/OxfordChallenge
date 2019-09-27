@@ -2,6 +2,8 @@ let nameValid = false;
 let emailValid = false;
 let cardValid = false;
 
+
+//Checks if name field is valid
 function validateName()
 {
     let value = document.getElementById("nameBox").value;
@@ -11,7 +13,7 @@ function validateName()
         nameValid = false;
         return false;
     }
-    else if (value.length > 15)
+    else if (!(value.length < 24))//name must be less than 24 characters.  Spaces are counted
     {
         //turns field red
         document.getElementById("nameBox").style.color = "#cc0000";
@@ -27,6 +29,7 @@ function validateName()
     return true;
 }
 
+//checks if email field is valid
 function validateEmail()
 {
     let value = document.getElementById("emailBox").value;
@@ -49,6 +52,7 @@ function validateEmail()
     return false;
 }
 
+//checks card number is valid
 function validateCard()
 {
     let value = document.getElementById("cardBox").value;
@@ -117,14 +121,14 @@ function submit()
 
 function sendEmail()
 {
-    //alert("sent an email... honest!");
+    //alert("sent an email");
 
     let emailString = `mailto:${document.getElementById("emailBox").value}?subject=Form details&body=
     \n Name: \t ${document.getElementById("nameBox").value}
     \n Email address: \t ${document.getElementById("emailBox").value}
     \n Card Number: \t ${document.getElementById("cardBox").value}`;
 
-
+    //opens the system email service with details entered
     window.open(emailString);
 }
 
@@ -135,6 +139,7 @@ function handler(event)
 {
     if (event.target.id == "submit")
     {
+	//checks if fields are vaild before the submitting
         validateName();
         validateEmail();
         validateCard();

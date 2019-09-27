@@ -8,7 +8,7 @@
     margin: 0px 0px 0px 0px;
     padding: 0px;
     overflow: hidden;
-    background: linear-gradient(to right, #222222 70%, #000000 85%);
+    background: #373736;
 
     z-index: 9999;
 }
@@ -37,11 +37,11 @@ body
 
 .navBar ul li a:hover
 {
-    color: #e69100;
+    color: #88BD23;
 }
 
 #navBarCurrent
 {
     background-color: #000000;
-    color: #e69100;
+    color: #88BD23;
 }

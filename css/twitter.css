@@ -1,6 +1,7 @@
-.twitter-timeline
+#twitterTimeline
 {
     position: absolute;
-
-    left: 100px;
+    
+    left: 10%;
+    width: 80%;
 }
