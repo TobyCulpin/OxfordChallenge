@@ -1,0 +1,80 @@
+:root
+{
+    --line-spacing: 20px;
+    --box-height: 300px;
+    --box-width: 600px;
+
+    --submit-width: 100px;
+}
+
+.box
+{
+    border-radius: 50px;
+    border: 8px solid #373736;
+    background: #88BD23;
+    padding: 0px;
+    width: var(--box-width);
+    height: var(--box-height);
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: calc(var(--box-height) / -2) 0px 0px calc(var(--box-width) / -2);
+}
+
+.box .wrapper
+{
+  display: grid;
+  grid-template-columns: repeat(2, 120px);
+  grid-template-rows: repeat(0, 50px);
+  grid-row-gap: var(--grid-row-gap);
+  grid-column-gap: var(--grid-column-gap);
+  margin-left: 30px;
+  margin-top: 40px;
+  padding: 0px 0px 0px 0px;
+}
+
+.box .wrapper label
+{
+    position: relative;
+
+    left: 30px;
+    top: 10px;
+    padding: 0px;
+    margin-top: var(--line-spacing);
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+}
+
+.box .wrapper input
+{
+    position: relative;
+
+    border: none;
+    width: 370px;
+    height: 40px;
+
+    margin-top: var(--line-spacing);
+    padding-left: 15px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+}
+
+#submit
+{
+    position: absolute;
+
+    width: 110px;
+    height: 38px;
+
+    left: 250px;
+    top: 240px;
+
+    border-radius: 5px;
+    border: 1px solid #373736;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+}

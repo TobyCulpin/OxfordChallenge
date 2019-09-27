@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+
+    <div class="box">
+        <div class="wrapper">
+            
+            <label>Name:</label>
+            <input  required type="text"
+                    id="nameBox"
+                    placeholder="Enter your Name"
+                    value=""
+                    onblur="validateName()" />
+
+            <label>Email:</label>
+            <input  required type="text"
+                    id="emailBox"
+                    placeholder="Enter your Email"
+                    value=""
+                    onblur="validateEmail()" />
+
+            <label>Card:</label>
+            
+            <input  required type="text"
+                    id="cardBox"
+                    placeholder="Enter a Proxy Credit Card Number."
+                    value=""
+                    onblur="validateCard()" />
+                    
+        </div>
+        <input id="submit" type="submit" value="Submit">
+    </div>
+    
+</body>
+<script src="js/form.js"></script>
+</html>
