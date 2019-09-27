@@ -1,0 +1,47 @@
+/* Navagation bar */
+.navBar ul
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    overflow: hidden;
+    background: linear-gradient(to right, #222222 70%, #000000 85%);
+
+    z-index: 9999;
+}
+
+body
+{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.navBar ul li
+{
+    float: left;
+}
+
+.navBar ul li a
+{
+    display: block;
+    color: #d0d0d0;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: var(--default-font);
+}
+
+.navBar ul li a:hover
+{
+    color: #e69100;
+}
+
+#navBarCurrent
+{
+    background-color: #000000;
+    color: #e69100;
+}
